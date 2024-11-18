@@ -1,5 +1,5 @@
 * {
-    background: #101010;
+    background: none;
     color: #FFFFFF;
     padding: 0;
     margin: 0;
@@ -12,7 +12,8 @@
 }
 
 body {
-    background: none;
+    background-image: url(img/P3R3.jpg);
+    background-attachment: fixed;
 }
 
 p {
@@ -21,12 +22,18 @@ p {
     padding: 20px 0px 20px 0px;
 }
 
+img{
+    background: none;
+}
+
 /* ---------- HEADER ---------- */
 
 header {
-    background: none; /* à modifier */
+    position: fixed;
+    background: #101010; /* à modifier */
     display: flex;
     margin: 0;
+    width: 100%;
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
@@ -95,7 +102,7 @@ main {
 }
 
 .gros-titre {
-    background: none; /* à modifier */
+    background: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -116,6 +123,7 @@ main {
 }
 
 .container a {
+    background: transparent;
     padding: 15px;
     margin: 0px;
     border-radius: 100px;
@@ -150,7 +158,7 @@ h1 {
 /* ---------- FOOTER ---------- */
 
 footer {
-    background: none; /* à modifier */
+    background: #101010; /* à modifier */
     display: flex;
     justify-content: center;
     align-items: center;
