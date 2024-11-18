@@ -1,6 +1,7 @@
 * {
     background: none;
-    color: #FFFFFF;
+    color: #F2EBE3; /* light : #F2EBE3 */
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,8 +13,13 @@
 }
 
 body {
-    background-image: url(img/P3R3.jpg);
+    background: #141414; /* light : #F2EBE3 */
     background-attachment: fixed;
+}
+
+img{
+    background: none;
+    transition: 150ms;
 }
 
 p {
@@ -22,15 +28,11 @@ p {
     padding: 20px 0px 20px 0px;
 }
 
-img{
-    background: none;
-}
-
 /* ---------- HEADER ---------- */
 
 header {
     position: fixed;
-    background: #101010; /* à modifier */
+    backdrop-filter: blur(10px);
     display: flex;
     margin: 0;
     width: 100%;
@@ -39,10 +41,11 @@ header {
     align-items: center;
     z-index: 100;
     align-self: center;
+    border-bottom: 2px solid #F2EBE3; /* light : #F2EBE3 */
 }
 
 .logo {
-    color: #FFFFFF;
+    color: #F2EBE3;
     background: none;
     font-size: 32px;
     text-decoration: none;
@@ -59,7 +62,7 @@ header {
     transition: 150ms;
 }
 .navbar a {
-    color: #FFFFFF;
+    color: #F2EBE3; /* light : #F2EBE3 */
     background: transparent;
     font-size: 18px;
     font-weight: 600;
@@ -70,20 +73,15 @@ header {
     transition: 150ms;
 }
 .navbar a:hover {
-    background: #3b3b3b;
+    background: #F2EBE3; /* light : #F2EBE3 */
+    color: #101010;
     transition: 150ms;
-}
-
-.horizontal-line {
-    width: 100%;
-    height: 1px;
-    background: #ffffff;
 }
 
 /* ---------- CONTENT ---------- */
 
 main {
-    background: none; /* à modifier */
+    background: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +96,7 @@ main {
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    padding: 0px 100px 0px 0px;
+    padding: 0px 50px 0px 50px;
 }
 
 .gros-titre {
@@ -106,7 +104,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 50px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     padding: 0;
     font-size: 20px;
 }
@@ -118,7 +116,7 @@ main {
     margin: 30px;
     padding: 10px;
     font-size: 20px;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #F2EBE3; /* light : #F2EBE3 */
     border-radius: 100px;
 }
 
@@ -148,19 +146,131 @@ h1 {
     font-weight: 200;
 }
 
+h2 {
+    display: flex;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size:xx-large;
+    font-weight: 200;
+}
+
 .side{
     z-index: 3;
     background: none;
     font-size: 28px;
 }
 
+.link{
+    background: none;
+}
+.link a{
+    color: #fc7c1a;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 20px 50px 20px 0px;
+}
+.link a:hover{
+    color: #fc651a;
+    font-style: normal;
+}
+
+.contimg{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.item{
+    margin: 50px 30px 0px 30px;
+    padding: 0;
+    display: flex;
+    background: none;
+    width: fit-content;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.icon:hover{
+    transform: scale(1.3);
+    transition: 150ms;
+  }
+
+/* ---------- CARD ---------- */
+
+.card{
+    background: #222222;
+    color: #101010;
+    height: fit-content;
+    margin: 50px 70px 50px 0px;
+    padding: 40px;
+    justify-content: space-between;
+    z-index: 100;
+    border-radius: 0px 32px 32px 0px;
+    border-top:    2px solid #3f3f3f;
+    border-right:  2px solid #3f3f3f; 
+    border-bottom: 2px solid #3f3f3f;
+    transition: 150ms;
+}
+.card:hover{
+    background: #2b2b2b;
+    transform: scale(1.03);
+    transition: 150ms;
+}
+.card p{
+    background: none;
+    max-width: 70%;
+}
+.card a{
+    color: #ffffff;
+}
+
+.texte{
+    z-index: 3;
+    background: none;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.button{ 
+    background: #F2EBE3;
+    color: #101010;
+    font-size: 25px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 300px;
+    transition: 150ms;
+}
+.button:hover{
+    background: #FF5757;
+    transition: 150ms;
+}
+.button img{
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    width:15px;
+    }
+
+aside {
+    background: none;
+    float: right;
+    transition: 150ms;
+}
+
 
 /* ---------- FOOTER ---------- */
 
 footer {
-    background: #101010; /* à modifier */
+    backdrop-filter: blur(10px);    
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    border-top: 2px solid #F2EBE3;
 }
