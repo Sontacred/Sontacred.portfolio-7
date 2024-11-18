@@ -49,6 +49,7 @@ header {
   
 .navbar {
     background: none;
+    transition: 150ms;
 }
 .navbar a {
     color: #FFFFFF;
@@ -56,13 +57,13 @@ header {
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    margin-left: 40px;
-    padding: 10px;
-    border-radius: 8px;
+    margin-left: 20px;
+    padding: 12px 18px 12px 18px;
+    border-radius: 100px;
+    transition: 150ms;
 }
 .navbar a:hover {
-    background: #585858;
-    color: #ffffff;
+    background: #3b3b3b;
     transition: 150ms;
 }
 
