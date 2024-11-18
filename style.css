@@ -20,6 +20,7 @@ p {
     font-size: 25px;
     padding: 20px 0px 20px 0px;
 }
+
 /* ---------- HEADER ---------- */
 
 header {
@@ -75,7 +76,6 @@ header {
 
 main {
     background: none; /* à modifier */
-    min-height: 750px; /* à modifier */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 100px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     padding: 0;
     font-size: 20px;
 }
@@ -107,7 +107,7 @@ main {
     background: none; /* à modifier */
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 30px;
     padding: 10px;
     font-size: 20px;
     border: 1px solid #FFFFFF;
@@ -126,17 +126,17 @@ main {
     transition: 150ms;
 }
 
+h1 {
+    font-size: 120px;
+    font-weight: 900;
+}
+
 .h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size:xx-large;
     font-weight: 200;
-}
-
-h1 {
-    font-size: 120px;
-    font-weight: 900;
 }
 
 .side{
